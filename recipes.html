@@ -1,1 +1,209 @@
-Recipes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Food Toursit</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href="css/recipes.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- JS files for filtering -->
+  <script src="js/tags_javascript.js"></script>
+</head>
+
+<body>
+<!-- Top Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">The Food Tourist</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                 <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+                 <li class="active"><a href="about us.html">About Us</a></li>
+                 <li class="active"><a href="recipes.html">Recipes</a></li>
+                 <li class="active"><a href="get involved.html">Get Involved</a></li>
+            </ul>
+          </div>
+        </div>
+  </nav>
+
+<br>
+<br>
+<!-- Main section -->
+  <div class="container">
+    <div>
+      <h2>Filter dishes by continent</h2>
+    </div>
+
+    <div>
+      <button class="btn btn-primary filter-button" data-filter="All">All</button>
+      <button class="btn btn-default filter-button" data-filter="Africa">Africa</button>
+      <button class="btn btn-default filter-button" data-filter="Asia">Asia</button>
+      <button class="btn btn-default filter-button" data-filter="Australia">Australia</button>
+      <button class="btn btn-default filter-button" data-filter="Europe">Europe</button>
+      <button class="btn btn-default filter-button" data-filter="North America">North America</button>
+      <button class="btn btn-default filter-button" data-filter="South America">South America</button>
+    </div>
+
+<br>
+    <!-- starts filtering section -->
+    <div class="row">
+
+      <div class="col-md-3 filter europe">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/paella.jpg" alt="Paella">
+          <div class="cap1">
+            <h3>Seafood Paella</h3>
+            <p>This impressive Spanish one pot, with monkfish, king prawns and mussels, is perfect for feeding a crowd at a dinner party!</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="paella.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter australia">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/bunny chow.jpg" alt="bunny chow">
+          <div class="cap1">
+            <h3>Bunny Chow</h3>
+            <p>A delicious dish originating from Durban's Indian community. Rich beef curry, served in a hollowed-out loaf which soaks up the all gorgeous juices and fantastic flavours.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="bunny chow.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter asia">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/gyoza.jpg" alt="gyoza">
+          <div class="cap1">
+            <h3>Gyoza</h3>
+            <p>Juicy on the inside, crispy and golden brown on the outside, these pan-fried dumplings are popular weeknight meal as well as a great appetizer.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="gyoza.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 filter asia">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/pho.jpg" alt="pho">
+          <div class="cap1">
+            <h3>Beef Pho</h3>
+            <p>Try making this delicious Vietnamese broth as something different for dinner. It's full of classic Asian flavours along with sirloin steak and noodles.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="chicken tereyaki.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter europe">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/schnitzel.jpg" alt="pho">
+          <div class="cap1">
+            <h3>Schnitzel</h3>
+            <p>This authentic German Schnitzel recipe has been passed down for generations. Use this same method for pork, veal or chicken schnitzel.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="chicken tereyaki.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter africa">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/lamb tagine.jpg" alt="lamb tagine">
+          <div class="cap1">
+            <h3>Lamb Tagine</h3>
+            <p>This succulent and superhealthy one-pot is guaranteed to satisfy a crowd - save time and make it up to two days ahead. Slowcook to perfection.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="lamb tagine.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter asia">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/chicken tereyaki.jpg" alt="chicken tereyaki">
+          <div class="cap1">
+            <h3>Chicken Teriyaki</h3>
+            <p>A popular Japanese chicken dish topped with a savory and sweet teriyaki sauce. This tried and tested recipe yields the best chicken teriyaki ever.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="chicken tereyaki.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter europe">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/turkish eggs.jpg" alt="turkish eggs">
+          <div class="cap1">
+            <h3>Turkish Eggs</h3>
+            <p>Looking for a warming bowl of comfort food for two? These easy vegetarian Turkish poached eggs can be ready in just 20 minutes.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="turkish eggs.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter south america">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/dulche de leche.jpg" alt="dulche de leche">
+          <div class="cap1">
+            <h3>Dulche De Leche</h3>
+            <p>Not to be confused with its cousin, caramel, traditional dulce de leche is Argentinian in its roots, its name translating to “sweet from milk”.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="turkish eggs.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 filter north america">
+        <div class="each-item">
+          <img class="img-thumbnail" src="images/pancakes.jpg" alt="pancakes">
+          <div class="cap1">
+            <h3>American Pancakes</h3>
+            <p>Easy, American-style, fluffy pancakes are great for feeding a crowd at breakfast or brunch. Top with something sweet like fruit, jam or syrup.</p>
+          </div>
+          <div class="cap2">
+            <p class="text-center"> <a href="pancakes.html">Recipe</a></p>
+          </div>
+        </div>
+      </div>
+
+    <!-- ends filtering section -->
+    </div>
+
+<br>
+
+    <div id="social-buttons" class="text-center">
+        <button class="btn btn-md" class="btn-twitter">Twitter</button>
+        <button class="btn btn-md btn-facebook">Facebook</button>
+        <button class="btn btn-md btn-pinterest">Pinterest</button>
+    </div>
+
+<br>
+
+  </div>
+</body>
+</html>
