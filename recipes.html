@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <title>The Food Toursit</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link href="css/recipes.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <!-- JS files for filtering -->
   <script src="js/tags_javascript.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +29,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">The Food Tourist</a>
+            <a class="navbar-brand" href="home.html">The Food Tourist</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,20 +53,21 @@
     </div>
 
     <div>
-      <button class="btn btn-primary filter-button" data-filter="All">All</button>
-      <button class="btn btn-default filter-button" data-filter="Africa">Africa</button>
-      <button class="btn btn-default filter-button" data-filter="Asia">Asia</button>
-      <button class="btn btn-default filter-button" data-filter="Australia">Australia</button>
-      <button class="btn btn-default filter-button" data-filter="Europe">Europe</button>
-      <button class="btn btn-default filter-button" data-filter="North America">North America</button>
-      <button class="btn btn-default filter-button" data-filter="South America">South America</button>
+      <button class="btn btn-primary" onclick="showAllImages()">All</button>
+      <button class="btn btn-primary" onclick="displayMyImages('africa')">Africa</button>
+      <button class="btn btn-primary" onclick="displayMyImages('asia')">Asia</button>
+      <button class="btn btn-primary" onclick="displayMyImages('australia')">Australia</button>
+      <button class="btn btn-primary" onclick="displayMyImages('europe')">Europe</button>
+      <button class="btn btn-primary" onclick="displayMyImages('north america')">North America</button>
+      <button class="btn btn-primary" onclick="displayMyImages('south america')">South America</button>
     </div>
+
 
 <br>
     <!-- starts filtering section -->
     <div class="row">
 
-      <div class="col-md-3 filter europe">
+      <div class="col-md-3 europe">
         <div class="each-item">
           <img class="img-thumbnail" src="images/paella.jpg" alt="Paella">
           <div class="cap1">
@@ -73,7 +80,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter australia">
+      <div class="col-md-3 australia">
         <div class="each-item">
           <img class="img-thumbnail" src="images/bunny chow.jpg" alt="bunny chow">
           <div class="cap1">
@@ -86,7 +93,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter asia">
+      <div class="col-md-3 asia">
         <div class="each-item">
           <img class="img-thumbnail" src="images/gyoza.jpg" alt="gyoza">
           <div class="cap1">
@@ -100,7 +107,7 @@
       </div>
 
 
-      <div class="col-md-3 filter asia">
+      <div class="col-md-3 asia">
         <div class="each-item">
           <img class="img-thumbnail" src="images/pho.jpg" alt="pho">
           <div class="cap1">
@@ -113,7 +120,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter europe">
+      <div class="col-md-3 europe">
         <div class="each-item">
           <img class="img-thumbnail" src="images/schnitzel.jpg" alt="pho">
           <div class="cap1">
@@ -126,7 +133,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter africa">
+      <div class="col-md-3 africa">
         <div class="each-item">
           <img class="img-thumbnail" src="images/lamb tagine.jpg" alt="lamb tagine">
           <div class="cap1">
@@ -139,7 +146,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter asia">
+      <div class="col-md-3 asia">
         <div class="each-item">
           <img class="img-thumbnail" src="images/chicken tereyaki.jpg" alt="chicken tereyaki">
           <div class="cap1">
@@ -152,7 +159,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter europe">
+      <div class="col-md-3 europe">
         <div class="each-item">
           <img class="img-thumbnail" src="images/turkish eggs.jpg" alt="turkish eggs">
           <div class="cap1">
@@ -165,7 +172,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter south america">
+      <div class="col-md-3 south america">
         <div class="each-item">
           <img class="img-thumbnail" src="images/dulche de leche.jpg" alt="dulche de leche">
           <div class="cap1">
@@ -178,7 +185,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 filter north america">
+      <div class="col-md-3 north america">
         <div class="each-item">
           <img class="img-thumbnail" src="images/pancakes.jpg" alt="pancakes">
           <div class="cap1">
