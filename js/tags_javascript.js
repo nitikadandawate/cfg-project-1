@@ -1,21 +1,23 @@
-$(document).ready(function(){
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
+function showAllImages() {
+  var allImages = document.getElementsByClassName("col-md-3");
+  for (i = 0; i < allImages.length; i++) {
+  allImages[i].style.display = 'block';
+}
 
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
+}
 
-        }
-    });
+function hideAllImages() {
+  var allImages = document.getElementsByClassName("col-md-3");
+  for (i = 0; i < allImages.length; i++) {
+  allImages[i].style.display = 'none';
+}
+}
 
-});
+function displayMyImages(country) {
+hideAllImages();
+    var europe = document.getElementsByClassName(country);
+    for (i = 0; i < europe.length; i++) {
+    europe[i].style.display = 'block';
+}
+}
