@@ -1,0 +1,42 @@
+#topsection
+{
+  background:rgba(91, 108, 86, 0.3);
+  padding-top:15px;
+}
+
+#ingredients
+{
+color: rgba(91, 108, 86, 0.8);
+}
+
+.ingredients-list__item
+{
+font-size: 13px;
+color: rgba(91, 108, 86, 0.8);
+}
+
+#method
+{
+color: rgba(91, 108, 86, 0.8);
+border-bottom: 2px dotted #5B6C56;
+text-decoration: none;
+text-align: center;
+}
+
+#stock
+{
+  color: rgba(91, 108, 86, 0.8);
+}
+
+.method__list
+{
+color: rgba(91, 108, 86, 0.6);
+font-size: 25px;
+}
+
+.method__item
+{
+color: black;
+font-size: 15px;
+font-weight: normal;
+}
